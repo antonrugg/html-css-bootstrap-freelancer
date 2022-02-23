@@ -20,14 +20,23 @@
 
 <body>
     <!-- navbar -->
-   <div class="container-fluid bg-dark">
-    <div class="row align-items-center py-4">
-        <div class="col-5 text-white">START BOOTSTRAP</div>
-        <div class="col-1 offset-4">
-            <span class="text-white">hamburger</span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-link active" href="#about">ABOUT</a>
+                <a class="nav-link active" href="#contact-me">CONTACT</a>
+                
+            </div>
         </div>
     </div>
-   </div>
+</nav>
    <!-- end navbar -->
 
    <!-- first section -->
@@ -35,13 +44,13 @@
 
     <div class="container-fluid bg-success">
         <div class="row">
-            <div class="col-6 offset-3">
+            <div class="col-4 offset-3 mx-auto">
                     <img src="./img/avatar.svg" class="rounded py-2" alt="avatar">
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="text-white text-center">START BOOTSTRAP</h2>
+                <h1 class="text-white text-center">START BOOTSTRAP</h1>
             </div>
         </div>
         <div class="row text-center text-white fw-bold py-1">
@@ -52,9 +61,9 @@
                     <div class="col-auto w-25 line bg-light rounded break-line"></div>
                 </div>
             </div>
-            <div class="row text-white text-center fw-normal py-3">
+            <div class="row fw-normal py-3">
                 <div class="col-12">
-                    GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR
+                    <h2 class="text-white text-center">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h2>
                 </div>
             </div>
         </div>
@@ -64,9 +73,9 @@
     <!-- end section -->
     <!-- second section -->
     <div class="container-fluid bg-light py-3">
-        <div class="row text-center fw-bold">
-            <div class="col-12 py-3">
-                PORTFOLIO
+        <div class="row ">
+            <div class="col-12 py-3" id="portfolio">
+                <h3 class="text-center fw-bold">PORTFOLIO</h3>
             </div>
             <div class="col-12 py-3">
                 <div class="row align-items-center justify-content-center mx-auto mb-2">
@@ -77,22 +86,22 @@
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-auto">
                 <div class="col py-2">
-                    <img class="img-fluid" src="./img/cabin.png" alt="avatar">
+                    <img class="img-fluid rounded" src="./img/cabin.png" alt="avatar">
                 </div>
                 <div class="col py-2">
-                    <img class="img-fluid" src="./img/cake.png" alt="avatar">
+                    <img class="img-fluid rounded" src="./img/cake.png" alt="avatar">
                 </div>
                 <div class="col py-2">
-                    <img class="img-fluid" src="./img/circus.png" alt="avatar">
+                    <img class="img-fluid rounded" src="./img/circus.png" alt="avatar">
                 </div>
                 <div class="col py-2">
-                    <img class="img-fluid" src="./img/game.png" alt="avatar">
+                    <img class="img-fluid rounded" src="./img/game.png" alt="avatar">
                 </div>
                 <div class="col py-2">
-                    <img class="img-fluid" src="./img/safe.png" alt="avatar">
+                    <img class="img-fluid rounded" src="./img/safe.png" alt="avatar">
                 </div>
                 <div class="col py-2">
-                    <img class="img-fluid" src="./img/submarine.png" alt="avatar">
+                    <img class="img-fluid rounded" src="./img/submarine.png" alt="avatar">
                 </div>
             </div>
 
@@ -101,22 +110,22 @@
     <!-- end section -->
     <!-- third section -->
     <div class="container-fluid bg-success py-4">
-        <div class="row text-center fw-bold text-white mx-auto">
-            <div class="col-12 py-3 text-center">
-               <p>ABOUT</p>
+        <div class="row mx-auto container-lg">
+            <div class="col-12 py-3 text-center" id="about">
+               <h3 class="text-center fw-bold text-white">ABOUT</h3>
             </div>
-            <div class="col-12 py-3 text-center">
+            <div class="col-12 py-3 text-center text-white">
                 <div class="row align-items-center justify-content-center mb-2">
                     <div class="col-auto w-25 line bg-light rounded break-line"></div>
                     <i class="fa-solid fa-star col-auto"></i>
                     <div class="col-auto w-25 line bg-light rounded break-line"></div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 text-center fw-normal text-white mx-auto">
-                <div class="col py-2 text-start">
+            <div class="container-sm row row-cols-1 row-cols-sm-2 text-center fw-normal text-white mx-auto">
+                <div class="col py-3 text-start">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minima! Est porro quis nostrum, optio alias sed eos adipisci sunt? Vero praesentium ratione provident magnam sunt autem consequatur, laborum est.</p>
                 </div>
-                <div class="col py-2 text-start">
+                <div class="col py-3 text-start">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minima! Est porro quis nostrum, optio alias sed
                         eos adipisci sunt? Vero praesentium ratione provident magnam sunt autem consequatur, laborum est.</p>
                 </div>
@@ -134,9 +143,9 @@
     <!-- end section -->
     <!-- fourth section -->
     <div class="container-fluid bg-light py-4">
-        <div class="row text-center fw-bold">
+        <div class="row" id="contact-me">
             <div class="col-12 py-3 text-center">
-                CONTACT ME
+                <h3 class="text-center fw-bold">CONTACT ME</h3>
             </div>
             <div class="col-12 py-3 text-center">
                 <div class="row align-items-center justify-content-center mx-auto mb-2">
@@ -146,7 +155,7 @@
                 </div>
             </div>
         </div>
-        <div class="row fw-normal">
+        <div class="row fw-normal container-xs mx-auto">
             <form>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Name">
